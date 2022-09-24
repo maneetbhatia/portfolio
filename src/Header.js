@@ -5,10 +5,12 @@ const  Header = () => {
     return(
         <Main>
             <Head>
-            <H1><Link to="/">Maneet Bhatia</Link></H1>
+            <H1><NavLink to="/">MB</NavLink></H1>
             <Ul>
-                <Li><Link to="/portfolio">Projects</Link></Li>
-                <Li><Link to="/resume">Resume</Link></Li>
+                <Li><NavLink to="/about">About</NavLink></Li>
+                <Li><NavLink to="/portfolio">Projects</NavLink></Li>
+                <Li><NavLink to="/contact">Contact</NavLink></Li>
+                <Li><NavLink to="/resume">Resume</NavLink></Li>
             </Ul>
             </Head>
         </Main>
@@ -18,31 +20,41 @@ const  Header = () => {
 export default Header;
 
 const Main = styled.div`
-    background-color: grey;
-    color: white;
-    margin-bottom: 40px;
+border-bottom: 1px solid black;
+background-color: grey;
 
 `
 
 const Head = styled.div`
 display: flex;
+justify-content: space-between;
+width: 70%;
+margin: auto;
+padding: 15px 0px;
 `
 
 const H1 = styled.h1`
-float: left;
-margin-right: 35%;
-margin-left: 40px;
+width: fit-content;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
 `
 
 const Ul = styled.ul`
-float: right;
+width: fit-content;
 display: flex;
+text-decoration: none;
 `
 
 const Li = styled.li`
-padding:  0px 20px;
+margin-left: 60px;
 list-style: none;
-margin-top: 7px;
+
+margin-top: 8px;
 color: white;
 text-decoration: none;
+`
+
+const NavLink = styled(Link)`
+text-decoration: none;
+color: whitesmoke;
 `

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Footer = () => {
     return(
       <Main>
-        <P>@copy 2022 Maneet Bhatia</P>
+        <P>&copy; 2022, All rights reserved</P>
       </Main>
     )
 }
@@ -11,12 +11,12 @@ const Footer = () => {
 export default Footer;
 
 const Main = styled.div`
-background-color: grey;
-color: white;
 text-align: center;
 width: 100%;
-position: absolute;
-bottom: 0px;
+position:absolute;
+top: 95%;
+background-color: grey;
+color: whitesmoke;
 `
 
 const P = styled.p`
