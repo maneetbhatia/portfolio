@@ -8,6 +8,7 @@ import { AiFillGithub } from 'react-icons/ai';
 const Portfolio = () => {
     return(
     <Main>
+      <Work>
       <H1>Projects</H1>
       <Wrapper>
           <Project1>
@@ -19,43 +20,42 @@ const Portfolio = () => {
                 <AiFillGithub size={25}/>
               </a>
             </ProjInfo>
-            
           </Project1>
 
           <Project2>
           <a href="https://maneet79.github.io/Trivial-Trivia/" target="_blank"> 
           <Img src={ProjectImg2} alt="Trivia Game" /></a>
-
           <ProjInfo>
-              <h3>EventMaster</h3>
+              <h3>ShopFit</h3>
               <a href="https://github.com/maneetbhatia/EventMaster" target="_blank">
                 <AiFillGithub size={25}/>
               </a>
             </ProjInfo>
           </Project2>
+
           <Project3>
             <a href="https://maneet79.github.io/Crystal-Collector/." target="_blank"> 
             <Img src={ProjectImg1} alt="Rutgers Info Widget" /></a>
-
             <ProjInfo>
-              <h3>EventMaster</h3>
+              <h3>Critter</h3>
               <a href="https://github.com/maneetbhatia/EventMaster" target="_blank">
                 <AiFillGithub size={25}/>
               </a>
             </ProjInfo>
           </Project3>
+
           <Project4>
             <a href="https://maneet79.github.io/Guess-Game/." target="_blank"> 
             <Img src={ProjectImg3} alt="Rock Paper Scissors" /></a>
-
             <ProjInfo>
-              <h3>EventMaster</h3>
+              <h3>GifTastic</h3>
               <a href="https://github.com/maneetbhatia/EventMaster" target="_blank">
                 <AiFillGithub size={25}/>
               </a>
             </ProjInfo>
           </Project4>
     </Wrapper>
+    </Work>
     </Main>
     )
 }
@@ -63,9 +63,14 @@ const Portfolio = () => {
 export default Portfolio;
 
 const Main = styled.div`
+background-color: white;
+`
+
+const Work = styled.div`
 width: 70%;
 margin: auto;
-margin-top: 80px;
+padding-top: 80px;
+
 `
 
 
@@ -80,7 +85,7 @@ grid-template-columns: 45% 45%;
 grid-gap: 1%;
 justify-content: space-around;
 font-family: Georgia, Times, "Times New Roman", serif;
-margin-bottom: 130px;
+padding-bottom: 50px;
 `
 
 const Img = styled.img`
@@ -89,19 +94,23 @@ width: 100%;
 
 const Project1 = styled.div`
 padding: 10% 0px;
+background-color: blueviolet;
 
 `
 
 const Project2 = styled.div`
 padding: 10% 0px;
+background-color: blueviolet;
 `
 
 const Project3 = styled.div`
 padding: 10% 0px;
+background-color: blueviolet;
 `
 
 const Project4 = styled.div`
 padding: 10% 0px;
+background-color: blueviolet;
 `
 
 const ProjInfo = styled.div`

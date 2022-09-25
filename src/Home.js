@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import {Link} from 'react-router-dom'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import backgroungImg from './Assests/background.jpg';
 
 const Home = () => {
     return (
         <Main>
-        <P>Hello, I'm</P>
-        <H1>Maneet Bhatia.</H1>
-        <H3>Full-Stack web developer, avid traveller and sports enthusiast.</H3>
-        <Icons>
-            <Span><AiFillGithub size={30}/></Span>
-            <Span><AiFillLinkedin size={30}/></Span>
-            <Span><AiOutlineMail size={30}/></Span>
-        </Icons>
-        <LogoLink to="/about" >About Me</LogoLink>
+            <Wrapper>
+                <H1>Maneet Bhatia.</H1>
+                <H3>Full-Stack Web Developer</H3>
+                <Div><LogoLink to="/portfolio" >Projects</LogoLink></Div>
+                <Icons>
+                    <Span><AiFillGithub size={40}/></Span>
+                    <Span><AiFillLinkedin size={40}/></Span>
+                    <Span><IconLink to=""><AiOutlineMail size={40}/></IconLink></Span>
+                </Icons>
+            </Wrapper>
         </Main>
     )
 
@@ -22,43 +24,55 @@ const Home = () => {
 export default Home;
 
 const Main = styled.div`
-width: 70%;
-margin: auto;
-margin-top: 160px;
+    min-height: calc(100vh - 113px);
 `
 
-const P = styled.p`
-font-size: 25px;
-
+const Wrapper = styled.div`
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 `
 
 const H1 = styled.p`
-font-size: 80px;
-margin: 20px 0px;
+    font-size: 80px;
+    margin: 20px 0px;
 `
 
 const H3 = styled.h3`
-font-size: 30px;
+    font-size: 30px;
 `
 
 const Icons = styled.p`
-margin: 25px 40px 40px 0px;
+    margin: 50px 0px 40px 0px;
 `
 
 const Span = styled.span`
-margin-right: 40px;
+    cursor: pointer;
+    margin: 0px 25px;
 `
 
 const LogoLink = styled(Link)`
-padding: 10px 25px;
-border: 1px solid grey;
-text-decoration: none;
-color: grey;
-font-size: 25px;
-border-radius: 15px;
-
-&:hover{
-    background-color: grey;
+    padding: 10px 35px;
+    border: 1px solid white;
+    text-decoration: none;
     color: white;
-}
+    font-size: 25px;
+    border-radius: 15px;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+`
+
+const IconLink = styled(Link)`
+    text-decoration: none;
+    color: grey;
+`
+
+const Div = styled.div`
+    margin: 50px 0px 40px 0px;
 `

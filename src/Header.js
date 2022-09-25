@@ -20,41 +20,43 @@ const  Header = () => {
 export default Header;
 
 const Main = styled.div`
-border-bottom: 1px solid black;
-background-color: grey;
-
+    border-bottom: 1px solid black;
+    background-color: grey;
 `
 
 const Head = styled.div`
-display: flex;
-justify-content: space-between;
-width: 70%;
-margin: auto;
-padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 15px 0px;
 `
 
 const H1 = styled.h1`
-width: fit-content;
-font-family: Arial, Helvetica, sans-serif;
-color: white;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 `
 
 const Ul = styled.ul`
-width: fit-content;
-display: flex;
-text-decoration: none;
+    width: fit-content;
+    display: flex;
+    text-decoration: none;
 `
 
 const Li = styled.li`
-margin-left: 60px;
-list-style: none;
-
-margin-top: 8px;
-color: white;
-text-decoration: none;
+    margin-left: 60px;
+    list-style: none;
+    font-size: 18px;;
+    margin-top: 8px;
 `
 
 const NavLink = styled(Link)`
-text-decoration: none;
-color: whitesmoke;
+    text-decoration: none;
+    color: whitesmoke;
+    color: white;
+    
+    &:hover{
+        color: silver;
+    }
 `

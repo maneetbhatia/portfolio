@@ -13,10 +13,9 @@ export default Footer;
 const Main = styled.div`
 text-align: center;
 width: 100%;
-position:absolute;
-top: 95%;
 background-color: grey;
 color: whitesmoke;
+
 `
 
 const P = styled.p`
