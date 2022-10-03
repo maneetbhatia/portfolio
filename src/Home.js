@@ -1,19 +1,30 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {Link} from 'react-router-dom'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import backgroungImg from './Assests/background.jpg';
 
 const Home = () => {
     return (
         <Main>
             <Wrapper>
-                <H1>Maneet Bhatia.</H1>
+                <H1>Hello, I'm Maneet</H1>
                 <H3>Full-Stack Web Developer</H3>
-                <Div><LogoLink to="/portfolio" >Projects</LogoLink></Div>
+                <Div><ProjectLink to="/portfolio" >Projects</ProjectLink></Div>
                 <Icons>
-                    <Span><AiFillGithub size={40}/></Span>
-                    <Span><AiFillLinkedin size={40}/></Span>
-                    <Span><IconLink to=""><AiOutlineMail size={40}/></IconLink></Span>
+                    <Span>
+                        <LogoLink href="https://github.com/maneetbhatia" target="_blank">
+                            <AiFillGithub size={40}/>
+                        </LogoLink>
+                    </Span>
+                    <Span>
+                        <LogoLink href="https://ca.linkedin.com/in/maneet-bhatia-web-developer?trk=people-guest_people_search-card" target="_blank">
+                            <AiFillLinkedin size={40}/>
+                        </LogoLink>
+                    </Span>
+                    <Span>
+                        <LogoLink href="mailto:someone@example.com">
+                            <AiOutlineMail size={40}/>
+                        </LogoLink>
+                    </Span>
                 </Icons>
             </Wrapper>
         </Main>
@@ -26,6 +37,11 @@ export default Home;
 const Main = styled.div`
     min-height: calc(100vh - 113px);
 `
+
+const flash = keyframes`
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+`;
 
 const Wrapper = styled.div`
     color: white;
@@ -47,6 +63,7 @@ const H3 = styled.h3`
 
 const Icons = styled.p`
     margin: 50px 0px 40px 0px;
+    animation: ${flash} 1s linear;
 `
 
 const Span = styled.span`
@@ -54,7 +71,17 @@ const Span = styled.span`
     margin: 0px 25px;
 `
 
-const LogoLink = styled(Link)`
+const LogoLink = styled.a`
+    text-decoration: none;
+    color: grey;
+    animation: ${flash} 0.7s linear;
+    
+    &:hover{
+        color: white;
+    }
+`
+
+const ProjectLink = styled(Link)`
     padding: 10px 35px;
     border: 1px solid white;
     text-decoration: none;

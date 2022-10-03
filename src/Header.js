@@ -1,17 +1,17 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import {NavLink,Link} from 'react-router-dom'
+import './header.css'
 
 const  Header = () => {
     return(
         <Main>
             <Head>
-            <H1><NavLink to="/">MB</NavLink></H1>
-            <Ul>
-                <Li><NavLink to="/about">About</NavLink></Li>
-                <Li><NavLink to="/portfolio">Projects</NavLink></Li>
-                <Li><NavLink to="/contact">Contact</NavLink></Li>
-                <Li><NavLink to="/resume">Resume</NavLink></Li>
-            </Ul>
+                <H1><NavLinks to="/">MB</NavLinks></H1>
+                <Ul>
+                    <Li><Links to="/about">About</Links></Li>
+                    <Li><Links to="/portfolio">Projects</Links></Li>
+                    <Li><Links to="/contact">Contact</Links></Li>
+                </Ul>
             </Head>
         </Main>
     )
@@ -21,7 +21,7 @@ export default Header;
 
 const Main = styled.div`
     border-bottom: 1px solid black;
-    background-color: grey;
+    background-color: gray;
 `
 
 const Head = styled.div`
@@ -51,7 +51,17 @@ const Li = styled.li`
     margin-top: 8px;
 `
 
-const NavLink = styled(Link)`
+const Links = styled(NavLink)`
+    text-decoration: none;
+    color: whitesmoke;
+    color: white;
+    
+    &:hover{
+        color: silver;
+    }
+`
+
+const NavLinks = styled(Link)`
     text-decoration: none;
     color: whitesmoke;
     color: white;

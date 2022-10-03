@@ -23,6 +23,7 @@ const Contact = () => {
     return (
         <div className="Main">
             <h1 className='H1'>Contact</h1>
+            <div className='Border'></div>
             <form className='Form' ref={form} onSubmit={sendEmail}>
                 {/* <label>Name</label> */}
                 <input className='Input' placeholder='Name' type="text" name="to_name" required/>

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled,{keyframes}  from 'styled-components';
 import backgroungImg from './Assests/background.jpg';
 
 const About = () => {
@@ -6,6 +6,7 @@ const About = () => {
     <Main>
       <AboutInfo>
         <H1>About Me</H1>
+        <Border></Border>
       <Wrapper>
         <AboutMe>
           <p>
@@ -13,8 +14,8 @@ const About = () => {
             new websites/web apps. I have built web presence from the ground up, updated website's data according to the business requirements and added new features as per business needs. Also, In my spare time, 
             I always search for new strategies which helps me improve my skill coding set. 
           </p>
-          <Mail>For any enquires and questions, please send me email:
-            <EmailLink href="mailto:someone@example.com">maneetbhatia79@gmail.com</EmailLink>.
+          <Mail>For any enquires and questions, please send me
+            <EmailLink href="mailto:someone@example.com">email</EmailLink>.
           </Mail>
         </AboutMe>
         <Skills>
@@ -44,7 +45,15 @@ export default About;
 
 const Main = styled.div`
   min-height: calc(100vh - 113px);
-  `
+`
+
+const Border = styled.div`
+border-top: 5px solid grey;
+width: 3%;
+margin: auto;
+padding-bottom: 60px;
+margin-top: 20px;
+`
 
 const AboutInfo = styled.div`
 width: 70%;
@@ -55,7 +64,6 @@ color: white;
 
 const H1 = styled.h1`
   text-align: center;
-  margin-bottom: 80px;
 `
 
 const Wrapper = styled.div`
@@ -67,13 +75,22 @@ const Wrapper = styled.div`
 
 const EmailLink = styled.a`
   text-decoration: none;
-  color: white;
+  color: grey;
   margin-left: 5px;
+
+  &:hover{
+    color: white;
+  }
 `
 
 const Mail = styled.p`
   margin-top: 25px;
 `
+
+const flash = keyframes`
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+`;
 
 const AboutMe = styled.div`
   width: 55%;
@@ -81,6 +98,7 @@ const AboutMe = styled.div`
   margin-left: 60px;
   text-align: justify;
 `
+
 
 const Skills = styled.div`
   width: 25%;
@@ -93,6 +111,7 @@ const Skills = styled.div`
 const List = styled.ul`
   margin-top: 26px;
   font-size: 19.5px;
+  animation: ${flash} 1s linear;
 `
 
 const P = styled.li`

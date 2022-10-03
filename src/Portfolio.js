@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import ProjectImg from './Assests/eventmaster.png'
 import ProjectImg1 from './Assests/Critter.jpg'
 import ProjectImg2 from './Assests/ShopFit.jpg'
@@ -10,10 +10,12 @@ const Portfolio = () => {
     <Main>
       <Work>
       <H1>Projects</H1>
+      <Border></Border>
       <Wrapper>
           <Project1>
-            <a href="https://maneetbhatia.github.io/Favorite-Gifs/" target="_blank"> 
-            <Img src={ProjectImg} alt="GIPHY-API" /></a>
+            {/* <a href="https://maneetbhatia.github.io/Favorite-Gifs/" target="_blank">  */}
+            <Img src={ProjectImg} alt="GIPHY-API" />
+            {/* </a> */}
             <ProjInfo>
               <h3>EventMaster</h3>
               <a href="https://github.com/maneetbhatia/EventMaster" target="_blank">
@@ -23,8 +25,9 @@ const Portfolio = () => {
           </Project1>
 
           <Project2>
-          <a href="https://maneet79.github.io/Trivial-Trivia/" target="_blank"> 
-          <Img src={ProjectImg2} alt="Trivia Game" /></a>
+          {/* <a href="https://maneet79.github.io/Trivial-Trivia/" target="_blank">  */}
+          <Img src={ProjectImg2} alt="Trivia Game" />
+          {/* </a> */}
           <ProjInfo>
               <h3>ShopFit</h3>
               <a href="https://github.com/maneetbhatia/ShopFit" target="_blank">
@@ -34,8 +37,9 @@ const Portfolio = () => {
           </Project2>
 
           <Project3>
-            <a href="https://maneet79.github.io/Crystal-Collector/." target="_blank"> 
-            <Img src={ProjectImg1} alt="Rutgers Info Widget" /></a>
+            {/* <a href="https://maneet79.github.io/Crystal-Collector/." target="_blank">  */}
+            <Img src={ProjectImg1} alt="Rutgers Info Widget" />
+            {/* </a> */}
             <ProjInfo>
               <h3>Critter</h3>
               <a href="https://github.com/maneetbhatia/Critter" target="_blank">
@@ -45,8 +49,9 @@ const Portfolio = () => {
           </Project3>
 
           <Project4>
-            <a href="https://maneetbhatia.github.io/space-survival/" target="_blank"> 
-            <Img src={ProjectImg3} alt="Rock Paper Scissors" /></a>
+            {/* <a href="https://maneetbhatia.github.io/space-survival/" target="_blank">  */}
+            <Img src={ProjectImg3} alt="Rock Paper Scissors" />
+            {/* </a> */}
             <ProjInfo>
               <h3>Space-Survival</h3>
               <a href="https://github.com/maneetbhatia/Space-Survival" target="_blank">
@@ -66,6 +71,14 @@ const Main = styled.div`
   background-color: white;
 `
 
+const Border = styled.div`
+  border-top: 5px solid grey;
+  width: 3%;
+  margin: auto;
+  padding-bottom: 60px;
+  margin-top: 20px;
+`
+
 const Work = styled.div`
   width: 70%;
   margin: auto;
@@ -74,7 +87,6 @@ const Work = styled.div`
 
 const H1 = styled.h1`
   text-align: center;
-  margin-bottom: 40px;
 `
 
 const Wrapper = styled.div`
@@ -93,10 +105,16 @@ const Img = styled.img`
   border-bottom: 1px solid black;
 `
 
+const flash = keyframes`
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+`;
+
 const Project1 = styled.div`
   margin: 10% 0px;
   border-radius: 15px 15px 5px 5px;
   box-shadow: 1px 1px 10px 1px black;
+  animation: ${flash} 0.8s linear;
 
   &:hover{
     transform: scale(1.05);
@@ -109,7 +127,8 @@ const Project2 = styled.div`
   margin: 10% 0px;
   border-radius: 15px 15px 5px 5px;
   box-shadow: 1px 1px 10px 1px black;
-
+  animation: ${flash} 0.8s linear;
+  
   &:hover{
       transform: scale(1.05);
       transition: 200ms transform ease-in-out;
@@ -117,10 +136,10 @@ const Project2 = styled.div`
 `
 
 const Project3 = styled.div`
-  margin: 10% 0px;
+  margin: 8% 0px;
   border-radius: 15px 15px 5px 5px;
   box-shadow: 1px 1px 10px 1px black;
-
+  animation: ${flash} 1s linear;
   &:hover{
     transform: scale(1.05);
     transition: 200ms transform ease-in-out;
@@ -128,10 +147,10 @@ const Project3 = styled.div`
 `
 
 const Project4 = styled.div`
-  margin: 10% 0px;
+  margin: 8% 0px;
   box-shadow: 1px 1px 10px 1px black;
   border-radius: 15px 15px 5px 5px;
-
+  animation: ${flash} 1s linear;
   &:hover{
     transform: scale(1.05);
     transition: 200ms transform ease-in-out;
@@ -142,6 +161,6 @@ const ProjInfo = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px 5px 10px 5px;
-  background-color: aliceblue;
-  border-radius: 0px 0px 5px 5px;
+  background-color: whitesmoke;
+  border-radius: 0px 0px 15px 15px;
 `
