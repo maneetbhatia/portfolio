@@ -69,16 +69,11 @@ const Submit = styled.button`
     color: grey;
     font-size: 25px;
     border-radius: 15px;
-    /* width: 103%; */
     cursor: pointer;
 
     &:hover {
         background-color: grey;
         color: white;
-    }
-
-    @media (max-width: 800px) {
-        /* width: 104%; */
     }
 `
 
