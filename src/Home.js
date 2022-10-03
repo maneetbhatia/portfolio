@@ -50,6 +50,15 @@ const Wrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @media (max-width: 1250px) {
+        width: 90%;
+        text-align: center;
+    }
+
+    @media (max-width: 800px) {
+        margin-top: 180px;
+    }
 `
 
 const H1 = styled.p`
@@ -59,6 +68,11 @@ const H1 = styled.p`
 
 const H3 = styled.h3`
     font-size: 30px;
+
+    @media (max-width: 800px) {
+        font-size: 35px;
+        
+    }
 `
 
 const Icons = styled.p`
@@ -69,6 +83,10 @@ const Icons = styled.p`
 const Span = styled.span`
     cursor: pointer;
     margin: 0px 25px;
+
+    @media (max-width: 800px) {
+        margin: 0px 20px;
+    }
 `
 
 const LogoLink = styled.a`
@@ -93,11 +111,10 @@ const ProjectLink = styled(Link)`
         background-color: black;
         color: white;
     }
-`
-
-const IconLink = styled(Link)`
-    text-decoration: none;
-    color: grey;
+    
+    @media (max-width: 800px) {
+        font-size: 35px;
+    }
 `
 
 const Div = styled.div`

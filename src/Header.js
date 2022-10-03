@@ -30,18 +30,35 @@ const Head = styled.div`
     width: 70%;
     margin: auto;
     padding: 15px 0px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `
 
 const H1 = styled.h1`
     width: fit-content;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+        padding-bottom: 15px;
+    }
 `
 
 const Ul = styled.ul`
     width: fit-content;
     display: flex;
     text-decoration: none;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
 `
 
 const Li = styled.li`
@@ -49,6 +66,12 @@ const Li = styled.li`
     list-style: none;
     font-size: 18px;;
     margin-top: 8px;
+
+    @media (max-width: 800px) {
+        font-size: 30px;
+        margin: auto;
+        padding-top: 20px;
+    }
 `
 
 const Links = styled(NavLink)`
@@ -58,6 +81,10 @@ const Links = styled(NavLink)`
     
     &:hover{
         color: silver;
+    }
+
+    @media (max-width: 800px) {
+        color: whitesmoke;
     }
 `
 

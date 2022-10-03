@@ -1,5 +1,4 @@
 import styled,{keyframes}  from 'styled-components';
-import backgroungImg from './Assests/background.jpg';
 
 const About = () => {
     return(
@@ -19,20 +18,33 @@ const About = () => {
           </Mail>
         </AboutMe>
         <Skills>
-            <h4>SKILLS & TOOLS</h4>
+          <H4>SKILLS & TOOLS</H4>
           <List>
-            <P >HTML5</P>
-            <P >CSS3</P>
-            <P >STYLED-COMPONENTS</P>
-            <P>BOOTSTRAP</P>
-            <P>JAVASCRIPT</P>
-            <P>REACT</P>
-            <P>NODE.JS</P>
-            <P>EXPRESS</P>
-            <P>MONGO-DB</P>
-            <P>GIT & GITHUB</P>
-            
+            <P >Html 5</P>
+            <P >Css 3</P>
+            <P >Styled-Components</P>
+            <P>Bootstrap</P>
+            <P>JavaScript</P>
+            <P>React</P>
+            <P>Node.js</P>
+            <P>Express</P>
+            <P>MongoDB</P>
+            <P>Git & Github</P>
           </List>
+          <List1>
+            <P>React</P>
+            <P>Node.js</P>
+            <P>Express</P>
+            <P>MongoDB</P>
+            <P>Git & Github</P>
+          </List1>
+          <List2>
+            <P >Html 5</P>
+            <P >Css 3</P>
+            <P >jQuery</P>
+            <P>Bootstrap</P>
+            <P>JavaScript</P>
+          </List2>
         </Skills>
         
       </Wrapper>
@@ -41,6 +53,8 @@ const About = () => {
     )
 }
 
+//``````````````MEDIA QUIRES```````````````
+
 export default About;
 
 const Main = styled.div`
@@ -48,18 +62,26 @@ const Main = styled.div`
 `
 
 const Border = styled.div`
-border-top: 5px solid grey;
-width: 3%;
-margin: auto;
-padding-bottom: 60px;
-margin-top: 20px;
+  border-top: 5px solid grey;
+  width: 3%;
+  margin: auto;
+  padding-bottom: 60px;
+  margin-top: 20px;
 `
 
 const AboutInfo = styled.div`
-width: 70%;
-margin: auto;
-padding-top: 80px;
-color: white;
+  width: 70%;
+  margin: auto;
+  padding-top: 80px;
+  color: white;
+
+  @media (max-width: 1300px) {
+    width: 80%;
+  }
+
+  @media (max-width: 1160px) {
+    width: 90%;
+  }
 `
 
 const H1 = styled.h1`
@@ -71,6 +93,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    margin-bottom: 160px;
+  }
 `
 
 const EmailLink = styled.a`
@@ -84,12 +111,12 @@ const EmailLink = styled.a`
 `
 
 const Mail = styled.p`
-  margin-top: 25px;
+  margin-top: 57px;
 `
 
 const flash = keyframes`
-    0% { transform: scale(0); }
-    100% { transform: scale(1); }
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
 `;
 
 const AboutMe = styled.div`
@@ -97,6 +124,11 @@ const AboutMe = styled.div`
   font-size: 25.5px;
   margin-left: 60px;
   text-align: justify;
+
+  @media (max-width: 1050px) {
+    width: 80%;
+    margin: auto;
+  }
 `
 
 
@@ -105,16 +137,59 @@ const Skills = styled.div`
   margin-right: 50px;
   font-size: 20px;
   margin-top: 3px;
+
+  @media (max-width: 1050px) {
+    width: 80%;
+    margin: auto;
+    margin-top: 130px;
+  }
 `
 
+const H4 = styled.h4`
+
+  @media (max-width: 1050px) {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+`
 
 const List = styled.ul`
   margin-top: 26px;
   font-size: 19.5px;
   animation: ${flash} 1s linear;
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
+`
+
+const List1 = styled.ul`
+  float: left;
+  font-size: 19.5px;
+  animation: ${flash} 1s linear;
+  display: none;
+
+  @media (max-width: 1050px) {
+    display: block;
+  }
+`
+
+const List2 = styled.ul`
+  float: right;
+  font-size: 19.5px;
+  animation: ${flash} 1s linear;
+  display: none;
+
+  @media (max-width: 1050px) {
+    display: block;
+  }
 `
 
 const P = styled.li`
   margin-bottom: 5px;
   list-style: none;
+
+  @media (max-width: 1050px) {
+    margin-right: 20px;
+  }
 `
