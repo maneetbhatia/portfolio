@@ -13,9 +13,9 @@ const Portfolio = () => {
       <Border></Border>
       <Wrapper>
           <Project1>
-            {/* <a href="https://maneetbhatia.github.io/Favorite-Gifs/" target="_blank">  */}
+            <a href="https://github.com/maneetbhatia/EventMaster" target="_blank"> 
             <Img src={ProjectImg} alt="GIPHY-API" />
-            {/* </a> */}
+            </a>
             <ProjInfo>
               <h3>EventMaster</h3>
               <a href="https://github.com/maneetbhatia/EventMaster" target="_blank">
@@ -25,9 +25,9 @@ const Portfolio = () => {
           </Project1>
 
           <Project2>
-          {/* <a href="https://maneet79.github.io/Trivial-Trivia/" target="_blank">  */}
+          <a href="https://github.com/maneetbhatia/ShopFit" target="_blank"> 
           <Img src={ProjectImg2} alt="Trivia Game" />
-          {/* </a> */}
+          </a>
           <ProjInfo>
               <h3>ShopFit</h3>
               <a href="https://github.com/maneetbhatia/ShopFit" target="_blank">
@@ -37,9 +37,9 @@ const Portfolio = () => {
           </Project2>
 
           <Project3>
-            {/* <a href="https://maneet79.github.io/Crystal-Collector/." target="_blank">  */}
+            <a href="https://github.com/maneetbhatia/Critter" target="_blank"> 
             <Img src={ProjectImg1} alt="Rutgers Info Widget" />
-            {/* </a> */}
+            </a>
             <ProjInfo>
               <h3>Critter</h3>
               <a href="https://github.com/maneetbhatia/Critter" target="_blank">
@@ -49,9 +49,9 @@ const Portfolio = () => {
           </Project3>
 
           <Project4>
-            {/* <a href="https://maneetbhatia.github.io/space-survival/" target="_blank">  */}
+            <a href="https://maneetbhatia.github.io/space-survival/" target="_blank"> 
             <Img src={ProjectImg3} alt="Rock Paper Scissors" />
-            {/* </a> */}
+            </a>
             <ProjInfo>
               <h3>Space-Survival</h3>
               <a href="https://github.com/maneetbhatia/Space-Survival" target="_blank">
