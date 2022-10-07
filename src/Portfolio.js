@@ -37,7 +37,7 @@ const Portfolio = () => {
           </Project2>
 
           <Project3>
-            <a href="https://github.com/maneetbhatia/Critter" target="_blank"> 
+            <a href="https://www.youtube.com/watch?v=RXFvAIZ16RQ" target="_blank"> 
             <Img src={ProjectImg1} alt="Rutgers Info Widget" />
             </a>
             <ProjInfo>
