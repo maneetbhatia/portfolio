@@ -25,7 +25,7 @@ const Portfolio = () => {
           </Project1>
 
           <Project2>
-          <a href="https://github.com/maneetbhatia/ShopFit" target="_blank"> 
+          <a href="https://www.youtube.com/watch?v=8FceWWIFynQ" target="_blank"> 
           <Img src={ProjectImg2} alt="Trivia Game" />
           </a>
           <ProjInfo>
