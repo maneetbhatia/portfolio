@@ -13,7 +13,7 @@ const Portfolio = () => {
       <Border></Border>
       <Wrapper>
           <Project1>
-            <a href="https://github.com/maneetbhatia/EventMaster" target="_blank"> 
+            <a href="https://www.youtube.com/watch?v=BgLvQHUA0JQ" target="_blank"> 
             <Img src={ProjectImg} alt="GIPHY-API" />
             </a>
             <ProjInfo>
