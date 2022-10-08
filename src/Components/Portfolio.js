@@ -1,8 +1,8 @@
 import styled, {keyframes} from 'styled-components'
-import ProjectImg from './Assests/eventmaster.png'
-import ProjectImg1 from './Assests/Critter.jpg'
-import ProjectImg2 from './Assests/ShopFit.jpg'
-import ProjectImg3 from './Assests/Space-Survival.jpg'
+import ProjectImg from '../Assests/eventmaster.png'
+import ProjectImg1 from '../Assests/Critter.jpg'
+import ProjectImg2 from '../Assests/ShopFit.jpg'
+import ProjectImg3 from '../Assests/Space-Survival.jpg'
 import { AiFillGithub } from 'react-icons/ai';
 
 const Portfolio = () => {

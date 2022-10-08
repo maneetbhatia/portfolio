@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Home from './Home'
-import Footer from './Footer';
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Contact from './Contact'
+import Header from "../Components/Header";
+import Home from '../Components/Home'
+import Footer from '../Components/Footer';
+import About from "../Components/About";
+import Portfolio from "../Components/Portfolio";
+import Contact from '../Components/Contact'
 import "./App.css"
 
 import {
