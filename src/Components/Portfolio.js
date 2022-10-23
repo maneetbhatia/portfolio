@@ -3,6 +3,8 @@ import ProjectImg from '../Assests/eventmaster.png'
 import ProjectImg1 from '../Assests/Critter.jpg'
 import ProjectImg2 from '../Assests/ShopFit.jpg'
 import ProjectImg3 from '../Assests/Space-Survival.jpg'
+import ProjectImg4 from "../Assests/securityservices.jpg"
+import ProjectImg5 from "../Assests/giftastic.jpg"
 import { AiFillGithub } from 'react-icons/ai';
 
 const Portfolio = () => {
@@ -36,6 +38,18 @@ const Portfolio = () => {
             </ProjInfo>
           </Project2>
 
+          <Project4>
+            <a href="https://security-services.netlify.app/" target="_blank"> 
+            <Img src={ProjectImg4} alt="Rock Paper Scissors" />
+            </a>
+            <ProjInfo>
+              <h3>Security-Services</h3>
+              <a href="https://github.com/maneetbhatia/SecurityServices" target="_blank">
+                <AiFillGithub size={25}/>
+              </a>
+            </ProjInfo>
+          </Project4>
+
           <Project3>
             <a href="https://www.youtube.com/watch?v=RXFvAIZ16RQ" target="_blank"> 
             <Img src={ProjectImg1} alt="Rutgers Info Widget" />
@@ -55,6 +69,18 @@ const Portfolio = () => {
             <ProjInfo>
               <h3>Space-Survival</h3>
               <a href="https://github.com/maneetbhatia/Space-Survival" target="_blank">
+                <AiFillGithub size={25}/>
+              </a>
+            </ProjInfo>
+          </Project4>
+
+          <Project4>
+            <a href="https://gif-tastic-app.netlify.app" target="_blank"> 
+            <Img src={ProjectImg5} alt="Rock Paper Scissors" />
+            </a>
+            <ProjInfo>
+              <h3>GifTastic</h3>
+              <a href="https://github.com/maneetbhatia/GifTastic" target="_blank">
                 <AiFillGithub size={25}/>
               </a>
             </ProjInfo>
@@ -100,14 +126,13 @@ const H1 = styled.h1`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-gap: 1%;
   justify-content: space-around;
   font-family: Georgia, Times, "Times New Roman", serif;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 
   @media (max-width: 950px) {
         grid-template-columns: 75%;
-        padding-bottom: 100px;
+        padding-bottom: 10%;
   }
 
   @media (max-width: 800px) {
