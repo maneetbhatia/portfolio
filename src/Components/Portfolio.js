@@ -73,18 +73,6 @@ const Portfolio = () => {
               </a>
             </ProjInfo>
           </Project4>
-
-          <Project4>
-            <a href="https://gif-tastic-app.netlify.app" target="_blank"> 
-            <Img src={ProjectImg5} alt="Rock Paper Scissors" />
-            </a>
-            <ProjInfo>
-              <h3>GifTastic</h3>
-              <a href="https://github.com/maneetbhatia/GifTastic" target="_blank">
-                <AiFillGithub size={25}/>
-              </a>
-            </ProjInfo>
-          </Project4>
     </Wrapper>
     </Work>
     </Main>
@@ -94,7 +82,7 @@ const Portfolio = () => {
 export default Portfolio;
 
 const Main = styled.div`
-  background-color: white;
+  /* background-color: white; */
 `
 
 const Border = styled.div`
@@ -121,6 +109,7 @@ const Work = styled.div`
 
 const H1 = styled.h1`
   text-align: center;
+  color: white;
 `
 
 const Wrapper = styled.div`
