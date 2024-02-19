@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Footer = () => {
     return(
       <Main>
-        <P> &copy; 2022, All rights reserved</P>
+        <P> &copy; 2024, All rights reserved</P>
       </Main>
     )
 }
