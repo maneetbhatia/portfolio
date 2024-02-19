@@ -15,7 +15,6 @@ text-align: center;
 width: 100%;
 background-color: grey;
 color: whitesmoke;
-
 `
 
 const P = styled.p`
